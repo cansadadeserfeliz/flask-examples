@@ -13,14 +13,14 @@ mkvirtualenv flask-examples
 pip install -r requirements.txt
 ```
 
-## 01
+##### 01
 
 ```bash
 cd 01_basic_project
 python run.py
 ```
 
-## 02
+##### 02
 
 ```bash
 cd 02_runserver
