@@ -1,4 +1,3 @@
-from flask import Flask
 from flask.ext.script import Manager
 
 from run import create_app

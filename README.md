@@ -19,3 +19,10 @@ pip install -r requirements.txt
 cd 01_basic_project
 python run.py
 ```
+
+## 02
+
+```bash
+cd 02_runserver
+python manage.py runserver
+```
