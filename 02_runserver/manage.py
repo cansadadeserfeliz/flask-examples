@@ -5,6 +5,7 @@ from run import create_app
 app = create_app()
 manager = Manager(app)
 
+
 @app.route("/")
 def hello():
     return "Hello World!"
