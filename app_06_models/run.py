@@ -4,7 +4,6 @@ from inspect import getmembers
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-
 db = SQLAlchemy()
 
 
@@ -27,7 +26,5 @@ def create_app():
         for name, item in getmembers(constants):
             context[name] = item
         return context
-
-    return app
 
     return app

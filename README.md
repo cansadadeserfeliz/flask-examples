@@ -16,13 +16,13 @@ pip install -r requirements.txt
 ##### 01
 
 ```bash
-cd 01_basic_project
+cd app_01_basic_project
 python run.py
 ```
 
 ##### 02-05
 
 ```bash
-cd 0[2-5]_runserver
+cd app_0[2-5]_runserver
 python manage.py runserver
 ```
