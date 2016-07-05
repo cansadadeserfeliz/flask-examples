@@ -20,9 +20,9 @@ cd 01_basic_project
 python run.py
 ```
 
-##### 02
+##### 02-05
 
 ```bash
-cd 02_runserver
+cd 0[2-5]_runserver
 python manage.py runserver
 ```
