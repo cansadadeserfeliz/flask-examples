@@ -2,5 +2,5 @@
 
 {% block title %}User detail{% endblock %}
 {% block content %}
-<h1>Hello, {{ user.username }} from {{ user.city.name }}!</h1>
+<h1>Hello, {{ user.username }} from <a href="{{ url_for('users.user_list', city_pk=user.city_id) }}">{{ user.city.name }}</a>!</h1>
 {% endblock %}

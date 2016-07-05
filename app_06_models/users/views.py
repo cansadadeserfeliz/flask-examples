@@ -1,15 +1,22 @@
 from flask import Blueprint, request, render_template
 
-from .models import User
+from .models import User, City
 
 users = Blueprint('users', __name__, template_folder='templates')
 
 
-@users.route('/')
-def user_list():
+@users.route('/', defaults={'city_pk': None})
+@users.route('/city/<int:city_pk>')
+def user_list(city_pk):
+    users = User.query
+    city = None
+    if city_pk:
+        city = City.query.filter_by(id=city_pk).first_or_404()
+        users = users.filter_by(city_id=city.id)
     return render_template(
         'users/list.html',
-        users=User.query.all(),
+        users=users.all(),
+        city=city,
     )
 
 
